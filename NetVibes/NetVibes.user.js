@@ -6,7 +6,7 @@
 // ==/UserScript==
 
 var node = document.createElement('script');
-node.innerHTML = "function cleanLinks() { var links = document.getElementsByTagName('a'); for(var i=0; i<links.length; i++) { links[i].setAttribute('href', links[i].href.replace(/^.*news.google.com\\\/news\\\/url.*url=http/, 'http').replace(/([?&#](utm_(term|medium|source|campaign|content)|xtor|ens_id)=[^&#]*)+/, '')); } }"
+node.innerHTML = "function cleanLinks() { var links = document.getElementsByTagName('a'); for(var i=0; i<links.length; i++) { links[i].setAttribute('href', links[i].href.replace(/^.*news.google.com\\\/news\\\/url.*url=http/, 'http').replace(/([?&#](utm_(term|medium|source|campaign|content)|xtor|ens_id)=[^&#]*)+/, '').replace(/^(https?:\\\/\\\/www.mediapart.fr\\\/.*?)(\\\?onglet=full)?$/, '$1?onglet=full')); } }"
 document.body.appendChild(node);
 window.setInterval(cleanLinks, 1000);
 
