@@ -21,3 +21,8 @@ document.body.appendChild(node);
 var node = document.createElement('style');
 node.innerHTML = '.nv-ir-content-wrapper { max-width: 3000px }';
 document.body.appendChild(node);
+
+var node = document.createElement('style');
+node.innerHTML = '.nv-sidebar-right { display: none }';
+document.body.appendChild(node);
+
