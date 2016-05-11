@@ -23,6 +23,11 @@ node.innerHTML = '.nv-ir-content-wrapper { max-width: 3000px }';
 document.body.appendChild(node);
 
 var node = document.createElement('style');
+node.innerHTML = '#viewType-2 a:visited, #viewType-2 a:visited .item-preview-wrapper, #viewType-2 a:visited .item-title { color: #AAA }' +
+'#viewType-2 a, #viewType-2 a .item-preview-wrapper, #viewType-2 a .item-title { color: #666 }';
+document.body.appendChild(node);
+
+var node = document.createElement('style');
 node.innerHTML = '.nv-sidebar-right { display: none }';
 document.body.appendChild(node);
 
