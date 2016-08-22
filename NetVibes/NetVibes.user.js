@@ -3,6 +3,7 @@
 // @namespace   netvibes.com
 // @grant       none
 // @include     https://www.netvibes.com/privatepage/*
+// @include     https://www.netvibes.com/dashboard/*
 // ==/UserScript==
 
 var node = document.createElement('script');
