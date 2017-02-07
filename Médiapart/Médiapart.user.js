@@ -8,4 +8,4 @@
 // ==/UserScript==
 if (~window.location.href.indexOf("?onglet=full") || ~window.location.href.indexOf("/commentaires"))
   $(".content-pager, .content-page-full").css('display', 'none');
-else window.location = window.location.href + "?onglet=full";
+else if (!~window.location.href.indexOf("/commentaires")) window.location = window.location.href + "?onglet=full";
