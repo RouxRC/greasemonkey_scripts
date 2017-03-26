@@ -4,6 +4,7 @@
 // @include     https://pad.regardscitoyens.org/p/affaires-courantes
 // @include     https://pad.regardscitoyens.org/p/Mails_RC
 // @include     https://pad.regardscitoyens.org/p/todo-list
+// @include     https://pad.regardscitoyens.org/p/lafabrique-encours
 // @version     1
 // @grant       none
 // ==/UserScript==
